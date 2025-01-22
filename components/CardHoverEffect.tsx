@@ -19,7 +19,7 @@ export function CardHoverEffect({ lang }: { lang: string }) {
   }));
 
   return (
-    <div className="max-w-7xl flex md:mx-auto px-8">
+    <div className="max-w-7xl flex md:mx-auto lg:px-8">
       <HoverEffect items={localizedArticles} />
     </div>
   );
