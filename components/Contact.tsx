@@ -161,7 +161,7 @@ const Contact = ({ lang }: { lang: string }) => {
               type="text"
               id="name"
               name="name"
-              className={`${lang === "Ar" && "text-right"} p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 outline-none`}
+              className={`${lang === "Ar" && "text-right"} p-4 rounded-lg border text-black border-gray-300 focus:ring-2 focus:ring-yellow-500 outline-none`}
               placeholder={lang === "Ar" ? "أدخل اسمك" : lang === "Fr" ? "Entrez votre nom" : "Enter your name"}
               value={formData.name}
               onChange={handleChange}
@@ -182,7 +182,7 @@ const Contact = ({ lang }: { lang: string }) => {
               type="email"
               id="email"
               name="email"
-              className={`${lang === "Ar" && "text-right"} p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 outline-none`}
+              className={`${lang === "Ar" && "text-right"} p-4 rounded-lg border text-black border-gray-300 focus:ring-2 focus:ring-yellow-500 outline-none`}
               placeholder={lang === "Ar" ? "أدخل بريدك الإلكتروني" : lang === "Fr" ? "Entrez votre email" : "Enter your email"}
               value={formData.email}
               onChange={handleChange}
@@ -203,7 +203,7 @@ const Contact = ({ lang }: { lang: string }) => {
               id="message"
               name="message"
               rows={5}
-              className={`${lang === "Ar" && "text-right"} p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 outline-none`}
+              className={`${lang === "Ar" && "text-right"} p-4 rounded-lg border text-black border-gray-300 focus:ring-2 focus:ring-yellow-500 outline-none`}
               placeholder={lang === "Ar" ? "اكتب رسالتك هنا" : lang === "Fr" ? "Écrivez votre message ici" : "Write your message here"}
               value={formData.message}
               onChange={handleChange}
