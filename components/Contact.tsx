@@ -96,7 +96,7 @@ const Contact = ({ lang }: { lang: string }) => {
             : <>Email, call, or complete the form,<br /> We'd love to hear from you! Reach out to us for inquiries, consultations, or assistance.</>}
         </p>
         <motion.div
-          className="fx justify-between w-full"
+          className="flex flex-col lg:flex-row gap-1 justify-between w-full"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
