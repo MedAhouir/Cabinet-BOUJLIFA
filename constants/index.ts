@@ -42,12 +42,6 @@ export const ARTICLES = [
   },
 ];
 
-export const CONTACTS = [
-  { key: 'twitter', path: 'Social Icons/Twitter.svg'},
-  { key: 'linkedin', path: 'Social Icons/LinkedIn.svg'},
-  { key: 'github', path: 'Social Icons/Github.svg'},
-];
-
 export const languages = [
   { code: "Ang", label: "EN" },
   { code: "Fr", label: "FR" },

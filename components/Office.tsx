@@ -18,7 +18,7 @@ const Office = ({ lang }: { lang: string }) => {
         viewport={{ once: true }}
       >
         <p className="text-sm text-gray-600 uppercase tracking-wide">
-          {lang === "Ar" ? "- مكتبنا" : lang === "Fr" ? "- Notre bureau" : "- Our office"}
+          {lang === "Ar" ? "مكتبنا -" : lang === "Fr" ? "- Notre bureau" : "- Our office"}
         </p>
         <h1 className={`${lang === "Ar" ? "" : "font-lora"} text-4xl lg:text-6xl font-heading font-bold capitalize leading-tight text-gray-800`}>
           {lang === "Ar" ? "تعرف عليّ وعلى موقعي" : lang === "Fr" ? "Connaissez-moi et ma localisation" : "Know me and my location"}

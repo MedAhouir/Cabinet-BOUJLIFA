@@ -21,7 +21,7 @@ const Articles = ({ lang }: { lang: string }) => {
       ? "- Legal disciplines."
       : lang === "Fr"
       ? "- Disciplines juridiques."
-      : "- التخصصات القانونية.";
+      : "التخصصات القانونية -";
 
   const description =
     lang === "Ang"

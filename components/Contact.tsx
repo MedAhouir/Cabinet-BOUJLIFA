@@ -82,7 +82,7 @@ const Contact = ({ lang }: { lang: string }) => {
       >
         <div className="flex flex-col">
           <p className="text-sm text-yellow-300 uppercase tracking-wide">
-            {lang === "Ar" ? "تواصل معنا -" : lang === "Fr" ? "- Contactez-nous" : "- Get in touch"}
+            {lang === "Ar" ? "لنتواصل -" : lang === "Fr" ? "- Contact" : "- Get in touch"}
           </p>
           <h1 className={`${lang === "Ar" ? "" : "font-lora"} text-4xl lg:text-6xl font-heading font-bold capitalize leading-tight text-yellow-300`}>
             {lang === "Ar" ? "اتصل بنا" : lang === "Fr" ? "Contactez-nous" : "Contact us."}
@@ -114,7 +114,7 @@ const Contact = ({ lang }: { lang: string }) => {
               <p className="font-semibold">
                 {lang === "Ar" ? "الهاتف" : lang === "Fr" ? "Téléphone" : "Phone"}
               </p>
-              <p className="text-gray-300">+212 123 456 789</p>
+              <p className="text-gray-300">+212 522 300 539</p>
             </div>
           </motion.div>
           <motion.div
@@ -137,7 +137,7 @@ const Contact = ({ lang }: { lang: string }) => {
 
       {/* Right Section */}
       <motion.div
-        className="flex flex-col gap-6 text-white w-[500px] my-6 lg:mr-10"
+        className="flex flex-col gap-6 text-white lg:w-[500px] my-6"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

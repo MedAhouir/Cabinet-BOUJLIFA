@@ -18,7 +18,7 @@ const Footer = ({ lang }: { lang: string }) => {
           <Link href="/" className="text-2xl font-bold text-yellow-500">
             {lang === "Ar" ? "مكتب بوجليفة" : "Cabinet BOUJLIFA"}
           </Link>
-          <p className="text-sm max-w-md">
+          <p className="hidden lg:flex text-sm max-w-md">
             {lang === "Ang"
               ? "Providing professional services tailored to your needs."
               : lang === "Fr"
@@ -29,7 +29,7 @@ const Footer = ({ lang }: { lang: string }) => {
 
         {/* Navigation Links */}
         <nav>
-          <ul className="flex flex-col lg:flex-row gap-4 lg:gap-8">
+          <ul className="hidden lg:flex flex-col lg:flex-row gap-4 lg:gap-8">
             {footerLinks.map((link) => (
               <li key={link.key}>
                 <Link
@@ -78,29 +78,6 @@ const Footer = ({ lang }: { lang: string }) => {
             ? "Tous droits réservés."
             : "كل الحقوق محفوظة."}
         </p>
-        <div className="flex gap-4 mt-4 lg:mt-0">
-          <Link
-            href="https://facebook.com"
-            target="_blank"
-            className="hover:text-yellow-500 transition"
-          >
-            Facebook
-          </Link>
-          <Link
-            href="https://linkedin.com"
-            target="_blank"
-            className="hover:text-yellow-500 transition"
-          >
-            LinkedIn
-          </Link>
-          <Link
-            href="https://twitter.com"
-            target="_blank"
-            className="hover:text-yellow-500 transition"
-          >
-            Twitter
-          </Link>
-        </div>
       </div>
     </footer>
   );
