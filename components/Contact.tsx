@@ -109,7 +109,7 @@ const Contact = ({ lang }: { lang: string }) => {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <FaPhoneAlt className="text-yellow-500 text-2xl" />
+            <FaPhoneAlt className={`${lang === "Ar" && "rotate-[4.5rad]"} text-yellow-500 text-2xl`}/>
             <div>
               <p className="font-semibold">
                 {lang === "Ar" ? "الهاتف" : lang === "Fr" ? "Téléphone" : "Phone"}
