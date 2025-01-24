@@ -16,6 +16,7 @@ export function CardHoverEffect({ lang }: { lang: string }) {
         : lang === "Fr"
         ? article.frenchDescription
         : article.arabicDescription,
+    imageSrc: article.header
   }));
 
   return (

@@ -1,6 +1,7 @@
 import { CardHoverEffect } from "./CardHoverEffect";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { BentoGridDemo } from "./BentoGridDemo";
 
 const Articles = ({ lang }: { lang: string }) => {
   // Intersection Observer hooks to detect when the section is in view
@@ -72,13 +73,14 @@ const Articles = ({ lang }: { lang: string }) => {
 
       {/* Card Hover Effect */}
       <motion.div
-        className="flex lg:items-center"
+        className="flex mt-10 lg:items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: inView ? 1 : 0 }} // Fade in only when in view
         transition={{ duration: 2 }}
       >
         <CardHoverEffect lang={lang} />
       </motion.div>
+      
     </section>
   );
 };

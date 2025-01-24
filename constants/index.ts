@@ -8,39 +8,184 @@ export const NAV_LINKS = [
 
 export const ARTICLES = [
   {
-    title: "Assistance, Conseil et Accompagnement",
-    frenchTitle: "Assistance, Conseil et Accompagnement",
-    arabicTitle: "المساعدة، المشورة والدعم",
-    description:
-      "Our mission goes beyond litigation: we assist and support our clients, whether individuals or businesses, in defending their interests on a daily basis. We intervene in negotiations, contract drafting, and agreements to ensure comprehensive legal assistance.",
-    frenchDescription:
-      "Notre mission va au-delà du contentieux : nous assistons et accompagnons nos clients, qu'ils soient particuliers ou entreprises, dans la défense de leurs intérêts au quotidien. Nous intervenons dans les pourparlers, la rédaction de contrats, et les conventions pour garantir une assistance juridique complète.",
-    arabicDescription:
-      "مهمتنا تتجاوز التقاضي: نحن نساعد ونرافق عملائنا، سواء كانوا أفرادًا أو شركات، في الدفاع عن مصالحهم اليومية. نتدخل في المفاوضات، وصياغة العقود، والاتفاقيات لضمان تقديم المساعدة القانونية الكاملة",
+    title: "Commercial Law",
+    frenchTitle: "Droit Commercial",
+    arabicTitle: "القانون التجاري",
+    description: "Providing strategic legal advice for commercial transactions.",
+    frenchDescription: "Offrant des conseils juridiques stratégiques pour les transactions commerciales.",
+    arabicDescription: "تقديم المشورة القانونية الاستراتيجية للمعاملات التجارية.",
+    header: "/droit-commercial.jpg"
   },
   {
-    title: "Audit Juridique",
-    frenchTitle: "Audit Juridique",
-    arabicTitle: "التدقيق القانوني",
-    description:
-      "We analyze and advise on the application of the law, providing an accurate legal interpretation of existing documents: statutes, contracts, regulations, etc. Our expertise helps prevent disputes by drafting authentic acts tailored to our clients' needs.",
-    frenchDescription:
-      "Nous analysons et conseillons sur l'application du droit, offrant une lecture juridique précise des documents existants : statuts, contrats, règlements, etc. Notre expertise aide à prévenir les litiges en rédigeant des actes authentiques et adaptés aux besoins de nos clients.",
-    arabicDescription:
-      "نقوم بتحليل وتقديم الاستشارات بشأن تطبيق القانون، موفرين قراءة قانونية دقيقة للمستندات الحالية: النظام الأساسي، العقود، اللوائح، وغيرها. تساعد خبرتنا في منع النزاعات من خلال صياغة مستندات قانونية صحيحة وموافقة لاحتياجات عملائنا",
+    title: "Consumer Law",
+    frenchTitle: "Droit de la Consommation",
+    arabicTitle: "قانون المستهلك",
+    description: "Protecting consumer rights and regulating commercial practices.",
+    frenchDescription: "Protection des droits des consommateurs et des pratiques commerciales.",
+    arabicDescription: "حماية حقوق المستهلكين وتنظيم الممارسات التجارية.",
+    header: "/droit-de-la-consommation.jpg"
   },
   {
-    title: "Droit des Contrats",
-    frenchTitle: "Droit des Contrats",
-    arabicTitle: "قانون العقود",
-    description:
-      "Specialists in contract drafting and analysis, we create custom documents tailored to each situation. Our expertise ensures reliable and compliant contracts, far from the standard templates that are often poorly suited.",
-    frenchDescription:
-      "Spécialistes en rédaction et analyse de contrats, nous créons des documents sur mesure, adaptés à chaque situation. Notre expertise garantit des contrats fiables et conformes, loin des modèles standard souvent mal adaptés.",
-    arabicDescription:
-      "نحن متخصصون في صياغة وتحليل العقود، حيث نقوم بإنشاء مستندات مخصصة، تتناسب مع كل حالة. تضمن خبرتنا إنشاء عقود موثوقة ومتوافقة، بعيدًا عن النماذج القياسية التي غالبًا ما تكون غير مناسبة",
+    title: "Banking Law",
+    frenchTitle: "Droit Bancaire",
+    arabicTitle: "القانون البنكي",
+    description: "Providing guidance on regulatory and financial transactions.",
+    frenchDescription: "Conseils sur les questions réglementaires et les transactions financières.",
+    arabicDescription: "تقديم التوجيه بشأن المعاملات المالية والمسائل التنظيمية.",
+    header: "/droit-bancaire.jpg"
+  },
+  {
+    title: "Criminal Law",
+    frenchTitle: "Droit Pénal",
+    arabicTitle: "القانون الجنائي",
+    description: "Offering defense and legal advice in criminal cases.",
+    frenchDescription: "Défense et conseil dans les affaires pénales.",
+    arabicDescription: "تقديم الدفاع والمشورة القانونية في القضايا الجنائية.",
+    header: "/droit-penal.jpg"
+  },
+  {
+    title: "Family Law",
+    frenchTitle: "Droit de la Famille",
+    arabicTitle: "قانون الأسرة",
+    description: "Managing family matters, including divorce and child custody.",
+    frenchDescription: "Gestion des affaires familiales, y compris le divorce et la garde des enfants.",
+    arabicDescription: "إدارة المسائل العائلية، بما في ذلك الطلاق وحضانة الأطفال.",
+    header: "/droit-familial.jpeg"
+  },
+  {
+    title: "Transportation Law",
+    frenchTitle: "Droit des Transports",
+    arabicTitle: "قانون النقل",
+    description: "Providing legal advice on transportation and logistics matters.",
+    frenchDescription: "Conseils sur les questions juridiques liées au transport et à la logistique.",
+    arabicDescription: "تقديم المشورة القانونية بشأن النقل والخدمات اللوجستية.",
+    header: "/droit-des-transports.jpg"
+  },
+  {
+    title: "Tax Law",
+    frenchTitle: "Droit Fiscal",
+    arabicTitle: "القانون الضريبي",
+    description: "Expertise in taxation for businesses and individuals.",
+    frenchDescription: "Expertise en matière de fiscalité pour les entreprises et les particuliers.",
+    arabicDescription: "خبرة في مجال الضرائب للشركات والأفراد.",
+    header: "/droit-fiscal.jpg"
+  },
+  {
+    title: "Labor Law",
+    frenchTitle: "Droit du Travail",
+    arabicTitle: "قانون العمل",
+    description: "Managing labor relations and resolving disputes.",
+    frenchDescription: "Gestion des relations de travail et des litiges.",
+    arabicDescription: "إدارة علاقات العمل وحل النزاعات.",
+    header: "/droit-du-travail.jpg"
+  },
+  {
+    title: "Real Estate Law",
+    frenchTitle: "Droit Immobilier",
+    arabicTitle: "القانون العقاري",
+    description: "Advising on real estate transactions and disputes.",
+    frenchDescription: "Conseils pour les transactions et litiges immobiliers.",
+    arabicDescription: "تقديم المشورة بشأن المعاملات والنزاعات العقارية.",
+    header: "/droit-immobilier.jpeg"
+  },
+  {
+    title: "Insurance Law",
+    frenchTitle: "Droit des Assurances",
+    arabicTitle: "قانون التأمين",
+    description: "Assisting with coverage issues and insurance claims.",
+    frenchDescription: "Assistance dans les questions de couverture et de réclamations d'assurance.",
+    arabicDescription: "المساعدة في قضايا التغطية ومطالبات التأمين.",
+    header: "/droit-des-assurances.jpg"
+  },
+  {
+    title: "Arbitration",
+    frenchTitle: "Arbitrage",
+    arabicTitle: "التحكيم",
+    description: "Resolving disputes through arbitration.",
+    frenchDescription: "Résolution des litiges par l'arbitrage.",
+    arabicDescription: "حل النزاعات عن طريق التحكيم.",
+    header: "/arbitrage.jpg"
+  },
+  {
+    title: "Civil Law",
+    frenchTitle: "Droit Civil",
+    arabicTitle: "القانون المدني",
+    description: "Providing advice and representation in various civil cases.",
+    frenchDescription: "Conseils et représentation dans diverses affaires civiles.",
+    arabicDescription: "تقديم المشورة والتمثيل في مختلف القضايا المدنية.",
+    header: "/droit-civil.jpg"
+  },
+  {
+    title: "Corporate Law",
+    frenchTitle: "Droit des Sociétés",
+    arabicTitle: "قانون الشركات",
+    description: "Advising on company structuring, governance, and operations.",
+    frenchDescription: "Conseils pour la structuration, la gouvernance et les opérations des sociétés.",
+    arabicDescription: "تقديم المشورة بشأن هيكلة الشركات وإدارتها وعملياتها.",
+    header: "/droit-des-societes.webp"
+  },
+  {
+    title: "Intellectual and Industrial Property",
+    frenchTitle: "Propriété Intellectuelle et Industrielle",
+    arabicTitle: "الملكية الفكرية والصناعية",
+    description: "Protecting intellectual and industrial property rights.",
+    frenchDescription: "Protection des droits de propriété intellectuelle et industrielle.",
+    arabicDescription: "حماية حقوق الملكية الفكرية والصناعية.",
+    header: "/propriete-intellectuelle.jpg"
   },
 ];
+
+export const STATES = [
+  {
+    number: 16,
+    title: {
+      Fr: "Années d'expérience",
+      En: "Years of Experience",
+      Ar: "سنوات الخبرة",
+    },
+  },
+  {
+    number: 350,
+    title: {
+      Fr: "Cas résolus",
+      En: "Cases Resolved",
+      Ar: "القضايا المحلولة",
+    },
+  },
+  {
+    number: 18,
+    title: {
+      Fr: "Domaines de spécialisation",
+      En: "Fields of Specialization",
+      Ar: "مجالات التخصص",
+    },
+  },
+  {
+    number: 98,
+    title: {
+      Fr: "Taux de réussite",
+      En: "Success Rate",
+      Ar: "نسبة النجاح",
+    },
+  },
+  {
+    number: 100,
+    title: {
+      Fr: "Réactivité",
+      En: "Responsiveness",
+      Ar: "الاستجابة",
+    },
+  },
+  {
+    number: 4,
+    title: {
+      Fr: "Langues parlées",
+      En: "Languages Spoken",
+      Ar: "اللغات المتحدثة",
+    },
+  },
+];
+
 
 export const languages = [
   { code: "Ang", label: "EN" },

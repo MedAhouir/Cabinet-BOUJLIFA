@@ -9,6 +9,7 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
+    imageSrc?: string; // Add optional image property for items
   }[];
   className?: string;
 }) => {
@@ -17,21 +18,25 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "fx flex-col lg:flex-row gap-12 py-10 lg:pl-0",
+        "grid grid-cols-1 lg:grid-cols-3 gap-8 py-10",
         className
       )}
     >
       {items.map((item, idx) => (
         <div
           key={idx}
-          className="relative group block w-full"
+          className={cn(
+            "relative group",
+            // Make the first and last two elements span the entire row
+            idx === 0 ? "lg:col-span-2" : ""  
+          )}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full lg:w-full bg-yellow-300 dark:bg-foreground block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-yellow-300 dark:bg-foreground block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -45,7 +50,10 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card className="">
+          <Card
+            className="h-full"
+            imageSrc={item.imageSrc} // Pass the image source
+          >
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
@@ -58,17 +66,32 @@ export const HoverEffect = ({
 export const Card = ({
   className,
   children,
+  imageSrc,
+  imageAlt,
 }: {
   className?: string;
   children: React.ReactNode;
+  imageSrc?: string; // Optional image source
+  imageAlt?: string; // Alt text for accessibility
 }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl lg:w-full lg:h-[500px] p-6 overflow-hidden border border-gray-400 cursor-pointer dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl p-6 overflow-hidden border border-gray-400 cursor-pointer dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 h-full",
         className
       )}
     >
+      {/* Image Section */}
+      {imageSrc && (
+        <div className="relative w-full h-48 overflow-hidden rounded-xl mb-4">
+          <img
+            src={imageSrc}
+            alt={imageAlt || "Card image"}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+      {/* Content Section */}
       <div className="relative z-50">
         <div className="p-4">{children}</div>
       </div>

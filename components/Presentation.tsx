@@ -17,12 +17,10 @@ const Presentation = ({ lang }: { lang: string }) => {
         <p className="text-sm text-yellow-300 uppercase tracking-wide">
           {lang === "Ang" && "- Presentation"}
           {lang === "Fr" && "- Présentation"}
-          {lang === "Ar" && " نعريف -"}
+          {lang === "Ar" && " تقديم -"}
         </p>
         <h1 className={`${lang === "Ar" ? "" : "font-lora"} text-4xl lg:text-6xl font-heading font-bold capitalize leading-tight text-yellow-300`}>
-          {lang === "Ang" && <>Boujlifa <br />Law Firm</>}
-          {lang === "Fr" && <>Le cabinet <br />d'avocats Boujlifa</>}
-          {lang === "Ar" && <>مكتب <br />المحاماة بوجليفة</>} 
+          {lang === "Ar" ? " تعريف" : "Definition"} 
         </h1>
       </motion.div>
 
@@ -43,13 +41,13 @@ const Presentation = ({ lang }: { lang: string }) => {
         >
           <p>
             {lang === "Ang" &&
-              "is a professional law firm offering high-quality legal services to individuals and businesses in various fields of law. The firm specializes in civil, criminal, commercial, administrative, and social law matters."
+              <><span className="text-yellow-300 text-2xl capitalize">Boujilfa law firm </span>is a professional law firm offering high-quality legal services to individuals and businesses in various fields of law. The firm specializes in civil, criminal, commercial, administrative, and social law matters.</>
             }
             {lang === "Fr" &&
-              "est un cabinet professionnel offrant des services juridiques de qualité supérieure aux particuliers et aux entreprises dans divers domaines du droit. Le cabinet se spécialise dans les affaires civiles, pénales, commerciales, administratives et sociales."
+              <><span className="text-yellow-300 text-2xl capitalize">Le cabinet d'avocat Boujlifa </span>est un cabinet professionnel offrant des services juridiques de qualité supérieure aux particuliers et aux entreprises dans divers domaines du droit. Le cabinet se spécialise dans les affaires civiles, pénales, commerciales, administratives et sociales.</>
             }
             {lang === "Ar" &&
-              "هو مكتب محاماة مهني يقدم خدمات قانونية عالية الجودة للأفراد والشركات في مجالات مختلفة من القانون. يتخصص المكتب في القضايا المدنية والجنائية والتجارية والإدارية والاجتماعية."
+              <><span className="text-yellow-300 text-2xl capitalize"> مكتب المحاماة بوجليفة </span>هو مكتب محاماة مهني يقدم خدمات قانونية عالية الجودة للأفراد والشركات في مجالات مختلفة من القانون. يتخصص المكتب في القضايا المدنية والجنائية والتجارية والإدارية والاجتماعية.</>
             }
           </p>
           <p>
