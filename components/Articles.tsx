@@ -1,7 +1,6 @@
 import { CardHoverEffect } from "./CardHoverEffect";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { BentoGridDemo } from "./BentoGridDemo";
 
 const Articles = ({ lang }: { lang: string }) => {
   // Intersection Observer hooks to detect when the section is in view
