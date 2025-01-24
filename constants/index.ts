@@ -50,7 +50,7 @@ export const ARTICLES = [
     description: "Managing family matters, including divorce and child custody.",
     frenchDescription: "Gestion des affaires familiales, y compris le divorce et la garde des enfants.",
     arabicDescription: "إدارة المسائل العائلية، بما في ذلك الطلاق وحضانة الأطفال.",
-    header: "/droit-familial.jpeg"
+    header: "/Droit-familial.jpeg"
   },
   {
     title: "Transportation Law",
