@@ -5,9 +5,9 @@ import { useInView } from "react-intersection-observer";
 const Articles = ({ lang }: { lang: string }) => {
   // Intersection Observer hooks to detect when the section is in view
   const { ref: sectionRef, inView } = useInView({
-    triggerOnce: true, // Trigger the animation only once when the section is first visible
-    threshold: 0.1, // Trigger when 10% of the section is in view
-  });
+    triggerOnce: false, // Ensure it triggers every time the section comes into view
+    threshold: 0.05,    // Trigger when at least 5% of the section is visible
+  });  
 
   const title =
     lang === "Ang"
@@ -74,8 +74,8 @@ const Articles = ({ lang }: { lang: string }) => {
       <motion.div
         className="flex mt-10 lg:items-center"
         initial={{ opacity: 0 }}
-        animate={{ opacity: inView ? 1 : 0 }} // Fade in only when in view
-        transition={{ duration: 2 }}
+        animate={{ opacity: inView ? 1 : 0 }}
+        transition={{ duration: 1 }}
       >
         <CardHoverEffect lang={lang} />
       </motion.div>
