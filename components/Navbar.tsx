@@ -6,6 +6,7 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import { useState } from "react";
 import LanguageSelector from "./LanguageSelector";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Navbar = ({ lang, setLang, }: { lang: string; setLang: React.Dispatch<React.SetStateAction<string>>; }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,11 +26,19 @@ const Navbar = ({ lang, setLang, }: { lang: string; setLang: React.Dispatch<Reac
       transition={{ duration: 1 }}
     >
       {/* Logo */}
-      <Link href="/" className="text-xl font-medium text-gray-800">
-        {lang === "Ar" ? "مكتب " : lang === "Fr" ? "Cabinet " : "Cabinet "}
-        <span className="font-bold text-yellow-500">
-          {lang === "Ar" ? "بوجليفة" : "BOUJLIFA"}
-        </span>
+      <Link href="/" className={`${lang === "Ar" ? "flex-row-reverse" : "" } fx gap-2 text-xl font-medium text-gray-800`}>
+        <div className="hidden lg:block">
+          {lang === "Ar" ? "مكتب " : lang === "Fr" ? "Cabinet " : "Cabinet "}
+          <span className="font-bold text-yellow-500">
+            {lang === "Ar" ? "بوجليفة" : "BOUJLIFA"}
+          </span>
+        </div>
+        <Image 
+          src="/logo.png"
+          alt="Logo"
+          width={50}
+          height={50} 
+        />
       </Link>
 
       {/* Desktop Navigation Links (Hidden on Medium and Smaller Devices) */}
