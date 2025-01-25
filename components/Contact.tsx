@@ -66,7 +66,7 @@ const Contact = ({ lang }: { lang: string }) => {
   return (
     <motion.section
       id="contact"
-      className={`${lang === "Ar" && "text-right lg:flex-row-reverse"} w-full my-10 fx flex-col lg:flex-row justify-between text-white text-lg p-12`}
+      className={`${lang === "Ar" && "text-right lg:flex-row-reverse"} w-full my-10 fx flex-col lg:flex-row justify-between text-white text-lg px-4 sm:px-8 lg:px-12 py-8`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

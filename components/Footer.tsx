@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
 import { footerLinks } from "@/constants";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Footer = ({ lang }: { lang: string }) => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer
-      className={`w-full text-gray-800 p-12 ${
+      className={`w-full text-gray-800 px-4 sm:px-8 lg:px-12 py-8 ${
         lang === "Ar" ? "text-right" : "text-left"
       }`}
     >
@@ -48,20 +49,13 @@ const Footer = ({ lang }: { lang: string }) => {
         </nav> 
 
         {/* Contact Information */}
-        <div className={`flex flex-col gap-2 ${lang === "Ar" ? "lg:items-end" : "lg:items-start"}`}>
-          <p>
-            {lang === "Ang"
-              ? "Phone: +212 522 300 539"
-              : lang === "Fr"
-              ? "Téléphone : +212 522 300 539"
-              : <>+212 522 300 539<span> : الهاتف</span></>}
-          </p>
-          <p>
-            {lang === "Ar"
-              ? "contactcabinetboujlifa@gmail.com : البريد الالكتروني"
-              : "Email : contactcabinetboujlifa@gmail.com"
-            }
-          </p>
+        <div className={`flex gap-2 ${lang === "Ar" ? "lg:items-end" : "lg:items-start"}`}>
+          <Link href="https://www.facebook.com/p/Cabinet-Ma%C3%AEtre-Mhamed-Boujlifa-100091478464484/?_rdr">
+            <FaFacebook className="text-gray-800 text-4xl" />
+          </Link>
+          <Link href="https://ma.linkedin.com/company/cabinet-d-avocat-ma%C3%AEtre-boujlifa">
+            <FaLinkedin className="text-gray-800 text-4xl" />
+          </Link>
         </div>
       </div>
 

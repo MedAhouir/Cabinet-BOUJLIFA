@@ -18,7 +18,7 @@ const Navbar = ({ lang, setLang, }: { lang: string; setLang: React.Dispatch<Reac
     <motion.nav
       className={`${
         lang === "Ar" ? "flex-row-reverse" : ""
-      } w-full flex items-center justify-between h-[15vh] px-6 lg:px-12 py-4 lg:py-6`}
+      } w-full flex items-center justify-between h-[15vh] px-4 sm:px-8 lg:px-12 py-8`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero = ({ lang }: { lang: string }) => {
   return (
-    <section className={`${lang === "Ar" && "lg:flex-row-reverse"} flex flex-col lg:flex-row justify-between w-full p-12 lg:h-[85vh]`}>
+    <section className={`${lang === "Ar" && "lg:flex-row-reverse"} flex flex-col lg:flex-row justify-between w-full px-4 sm:px-8 lg:px-12 py-8 lg:h-[85vh]`}>
       {/* Left Section */}
       <motion.div
         className={`flex flex-col justify-center items-start w-full lg:w-1/2 space-y-6 text-center lg:text-left`}

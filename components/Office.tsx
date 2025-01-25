@@ -11,7 +11,7 @@ const Office = ({ lang }: { lang: string }) => {
       <div
         className={`${
           lang === "Ar" && "text-right"
-        } w-full my-16 mx-0 flex flex-col gap-16 text-gray-800 text-lg p-12`}
+        } w-full my-16 mx-0 flex flex-col gap-16 text-gray-800 text-lg px-4 sm:px-8 lg:px-12 py-8`}
       >
         {/* Header Section */}
         <motion.div
@@ -137,7 +137,7 @@ const Office = ({ lang }: { lang: string }) => {
             >
               <iframe
                 className="w-full h-[300px] lg:h-[350px] border-0"
-                src="https://www.google.com/maps?q=40,+Rue+Benzert,+1er+Etage+la+Gironde+Casablanca,+Morocco&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.015405688015!2d-7.6005151!3d33.5837279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4b586b9b73%3A0xb71a7edb5fd93b74!2sCabinet%20Ma%C3%AEtre%20MHamed%20Boujlifa!5e0!3m2!1sen!2sma!4v1614598464859!5m2!1sen!2sma"
                 allowFullScreen
                 loading="lazy"
               ></iframe>

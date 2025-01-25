@@ -5,7 +5,7 @@ const Presentation = ({ lang }: { lang: string }) => {
   return (
     <section
       id="about"
-      className={`w-full my-10 mx-0 flex flex-col gap-5 justify-between text-white text-lg p-12 bg-gray-800 ${lang === "Ar" && "text-right"}`}
+      className={`w-full my-10 mx-0 flex flex-col gap-5 justify-between text-white text-lg px-4 sm:px-8 lg:px-12 py-8 bg-gray-800 ${lang === "Ar" && "text-right"}`}
     >
       <motion.div
         className="flex-col w-full"
@@ -73,13 +73,13 @@ const Presentation = ({ lang }: { lang: string }) => {
         >
           <p>
             {lang === "Ang" &&
-              "Boujlifa Law Firm relies on the experience and expertise of Maître Boujlifa to provide accurate advice and strong defense, while adhering to the highest ethical and professional standards."
+              <><b className="text-yellow-300">Boujlifa Law Firm</b> relies on the experience and expertise of Maître Boujlifa to provide accurate advice and strong defense, while adhering to the highest ethical and professional standards.</>
             }
             {lang === "Fr" &&
-              "Le cabinet d'avocats Boujlifa repose sur l'expérience et la compétence de Maître Boujlifa pour fournir des conseils précis et une défense solide, tout en respectant les normes éthiques et professionnelles les plus élevées."
+              <><b className="text-yellow-300">Le cabinet d'avocats Boujlifa</b> repose sur l'expérience et la compétence de Maître Boujlifa pour fournir des conseils précis et une défense solide, tout en respectant les normes éthiques et professionnelles les plus élevées.</>
             }
             {lang === "Ar" &&
-              "يعتمد مكتب المحاماة بوجليفة على خبرة وكفاءة الأستاذ بوجليفة لتقديم نصائح دقيقة ودفاع قوي، مع الالتزام بأعلى المعايير الأخلاقية والمهنية."
+              <>يعتمد <b className="text-yellow-300">مكتب المحاماة بوجليفة</b> على خبرة وكفاءة الأستاذ بوجليفة لتقديم نصائح دقيقة ودفاع قوي، مع الالتزام بأعلى المعايير الأخلاقية والمهنية</>
             }
           </p>
           <p>
