@@ -6,7 +6,7 @@ const Articles = ({ lang }: { lang: string }) => {
   // Intersection Observer hooks to detect when the section is in view
   const { ref: sectionRef, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once when the section is first visible
-    threshold: 0.2, // Trigger when 20% of the section is in view
+    threshold: 0.1, // Trigger when 10% of the section is in view
   });
 
   const title =
@@ -34,7 +34,7 @@ const Articles = ({ lang }: { lang: string }) => {
     <section
       ref={sectionRef}
       id="articles"
-      className={`flex flex-col justify-between w-full p-12 ${lang === "Ar" ? "text-right" : "text-left"}`}
+      className={`flex flex-col justify-between w-full px-4 sm:px-8 lg:px-12 py-8 ${lang === "Ar" ? "text-right" : "text-left"}`}
     >
       {/* Title with animation */}
       <motion.p
@@ -46,7 +46,7 @@ const Articles = ({ lang }: { lang: string }) => {
         {subtitle}
       </motion.p>
 
-      <div className={`fx flex-col gap-5 lg:flex-row ${lang === "Ar" ? "lg:flex-row-reverse" : ""} justify-between`}>
+      <div className={`flex flex-col gap-5 lg:flex-row ${lang === "Ar" ? "lg:flex-row-reverse" : ""} justify-between`}>
         {/* Left Section (Title) */}
         <motion.div
           className="flex flex-col justify-center w-full lg:w-1/2 space-y-6"
@@ -61,7 +61,7 @@ const Articles = ({ lang }: { lang: string }) => {
 
         {/* Right Section (Description) */}
         <motion.div
-          className="fx flex-col justify-center w-full lg:w-[535px] space-y-6"
+          className="flex flex-col justify-center w-full lg:w-[535px] space-y-6"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }} // Animate on scroll
           transition={{ duration: 1 }}
@@ -79,7 +79,6 @@ const Articles = ({ lang }: { lang: string }) => {
       >
         <CardHoverEffect lang={lang} />
       </motion.div>
-      
     </section>
   );
 };

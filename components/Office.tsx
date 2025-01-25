@@ -161,7 +161,7 @@ const Office = ({ lang }: { lang: string }) => {
         >
           <h1 className="text-4xl font-bold text-yellow-500">
             <span className="flex">
-              <Number n={state.number} /> {i === 3 || i === 5 ? "%" : ""}
+              <Number n={state.number} /> {i === 3 ? "%" : ""}
             </span>
           </h1>
           <h2 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-white transition-all duration-300">
