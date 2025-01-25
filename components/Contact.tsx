@@ -212,7 +212,7 @@ const Contact = ({ lang }: { lang: string }) => {
           </motion.div>
           <motion.button
             type="submit"
-            className="w-full py-4 bg-yellow-500 text-white rounded-lg font-semibold text-lg shadow-lg hover:bg-gray-800 hover:text-yellow-400"
+            className="w-full py-4 bg-yellow-500 text-gray-800 rounded-lg font-semibold text-lg shadow-lg hover:bg-white hover:text-yellow-400"
             disabled={isSending}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
