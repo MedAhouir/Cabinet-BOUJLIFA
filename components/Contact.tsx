@@ -84,14 +84,17 @@ const Contact = ({ lang }: { lang: string }) => {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <FaPhoneAlt className={`${lang === "Ar" && "rotate-[4.5rad]"} text-yellow-500 text-2xl`}/>
+            <FaPhoneAlt className={`${lang === "Ar" && "rotate-[4.5rad]"} text-yellow-500 text-2xl`} />
             <div>
               <p className="font-semibold">
                 {lang === "Ar" ? "الهاتف" : lang === "Fr" ? "Téléphone" : "Phone"}
               </p>
-              <p className="text-gray-300">+212 522 300 539</p>
+              <a href="tel:+212522300539" className="text-gray-300">
+                +212 522 300 539
+              </a>
             </div>
           </motion.div>
+
           <motion.div
             className={`${lang === "Ar" && "text-right flex-row-reverse"} flex  items-center gap-4`}
             initial={{ x: 50 }}
@@ -104,9 +107,12 @@ const Contact = ({ lang }: { lang: string }) => {
               <p className="font-semibold">
                 {lang === "Ar" ? "البريد الإلكتروني" : lang === "Fr" ? "Email" : "Email"}
               </p>
-              <p className="text-gray-300">contactcabinetboujlifa@gmail.com</p>
+              <a href="mailto:contactcabinetboujlifa@gmail.com" className="text-gray-300">
+                contactcabinetboujlifa@gmail.com
+              </a>
             </div>
           </motion.div>
+
         </motion.div>
       </motion.div>
 

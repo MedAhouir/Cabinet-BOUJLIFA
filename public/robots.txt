@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://cabinet-boujlifa.vercel.app/
+Host: https://cabinet-boujlifa.vercel.app
 
 # Sitemaps
 Sitemap: https://cabinet-boujlifa.vercel.app/sitemap.xml
