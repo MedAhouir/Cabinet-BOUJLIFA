@@ -17,6 +17,7 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   title: "Cabinet Boujlifa",
   description: "Votre partenaire de confiance pour des solutions juridiques",
+  robots: 'index, follow',
   other: {
     "google-site-verification": "h2lZ-R5OF4Dyb5T_j43FMg3_oPJvvwznab7nrzmxw9A"
   }
