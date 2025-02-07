@@ -4,22 +4,13 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Contact = ({ lang }: { lang: string }) => {
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [isSending, setIsSending] = useState(false);
   const [status, setStatus] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const sendEmail = async (e: React.FormEvent) => {
@@ -28,36 +19,20 @@ const Contact = ({ lang }: { lang: string }) => {
     setStatus("Sending...");
 
     try {
-      const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+      const response = await fetch("/api/sendEmail", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          service_id: "service_mibq5ep",
-          template_id: "template_pgamgv4",
-          user_id: "oaXG6ozzDDzYSIm-w",
-          template_params: {
-            from_name: formData.name,
-            from_email: formData.email,
-            message: formData.message,
-          },
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         setStatus("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        const errorData = await response.json();
-        setStatus(`Failed to send message. ${errorData?.message || 'Unknown error'}`);
+        setStatus("Failed to send message.");
       }
-    } catch (error: unknown) {
-      if (error instanceof Error) {
-        setStatus("Error: " + error.message);
-      } else {
-        setStatus("Unknown error occurred");
-      }
+    } catch (error) {
+      setStatus("An error occurred.");
     } finally {
       setIsSending(false);
     }
@@ -212,14 +187,20 @@ const Contact = ({ lang }: { lang: string }) => {
           </motion.div>
           <motion.button
             type="submit"
-            className="w-full py-4 bg-yellow-500 text-gray-800 rounded-lg font-semibold text-lg shadow-lg hover:bg-white hover:text-yellow-400"
+            className="w-full py-4 rounded-lg text-lg font-semibold text-gray-800 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 shadow-lg hover:scale-105 hover:from-yellow-400 hover:to-red-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all duration-300 ease-in-out"
             disabled={isSending}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.5 }}
+                      transition={{ duration: 1.5 }}
           >
-            {isSending ? "Sending..." : lang === "Ar" ? "إرسال" : lang === "Fr" ? "Envoyer" : "Send"}
+            {isSending ? (
+              <div className="flex justify-center items-center">
+                <div className="w-4 h-4 border-4 border-t-4 border-white rounded-full animate-spin"></div>
+              </div>
+            ) : (
+              lang === "Ar" ? "إرسال" : lang === "Fr" ? "Envoyer" : "Send"
+            )}
           </motion.button>
         </form>
         {status && <p className="mt-4 text-center">{status}</p>}
