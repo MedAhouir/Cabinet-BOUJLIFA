@@ -17,6 +17,7 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   title: "Cabinet Boujlifa",
   description: "Votre partenaire de confiance pour des solutions juridiques",
+  
 };
 
 export default function RootLayout({
@@ -26,6 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${lora.variable} ${rubik.variable}`}>
+      <head>
+        <meta name="google-site-verification" content="h2lZ-R5OF4Dyb5T_j43FMg3_oPJvvwznab7nrzmxw9A" />
+      </head>
       <body>
         {children}
       </body>
