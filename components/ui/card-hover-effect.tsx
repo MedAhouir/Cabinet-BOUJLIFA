@@ -28,7 +28,7 @@ export const HoverEffect = ({
           className={cn(
             "relative group",
             // Make the first and last two elements span the entire row
-            idx === 0 ? "lg:col-span-2" : ""  
+            idx === 0 || idx === 12 ? "lg:col-span-2" : ""  
           )}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}

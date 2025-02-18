@@ -53,15 +53,6 @@ export const ARTICLES = [
     header: "/Droit-familial.jpeg"
   },
   {
-    title: "Transportation Law",
-    frenchTitle: "Droit des Transports",
-    arabicTitle: "قانون النقل",
-    description: "Providing legal advice on transportation and logistics matters.",
-    frenchDescription: "Conseils sur les questions juridiques liées au transport et à la logistique.",
-    arabicDescription: "تقديم المشورة القانونية بشأن النقل والخدمات اللوجستية.",
-    header: "/droit-des-transports.jpg"
-  },
-  {
     title: "Tax Law",
     frenchTitle: "Droit Fiscal",
     arabicTitle: "القانون الضريبي",
@@ -137,7 +128,7 @@ export const ARTICLES = [
 
 export const STATES = [
   {
-    number: 16,
+    number: 19,
     title: {
       Fr: "Années d'expérience",
       En: "Years of Experience",
@@ -145,15 +136,7 @@ export const STATES = [
     },
   },
   {
-    number: 350,
-    title: {
-      Fr: "Cas résolus",
-      En: "Cases Resolved",
-      Ar: "القضايا المحلولة",
-    },
-  },
-  {
-    number: 18,
+    number: 12,
     title: {
       Fr: "Domaines de spécialisation",
       En: "Fields of Specialization",
@@ -161,7 +144,7 @@ export const STATES = [
     },
   },
   {
-    number: 98,
+    number: 85,
     title: {
       Fr: "Taux de réussite",
       En: "Success Rate",
