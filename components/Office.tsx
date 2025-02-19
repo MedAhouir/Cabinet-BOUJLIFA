@@ -137,7 +137,7 @@ const Office = ({ lang }: { lang: string }) => {
 
       {/* Animated Grid Section */}
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-12 pt-0 rounded-lg shadow-lg"
+        className="grid grid-cols-1 lg:grid-cols-5 gap-6 p-12 pt-0 rounded-lg "
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -161,6 +161,7 @@ const Office = ({ lang }: { lang: string }) => {
           </div>
         ))}
       </motion.div>
+
     </section>
   );
 };
