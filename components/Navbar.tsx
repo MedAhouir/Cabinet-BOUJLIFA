@@ -26,7 +26,7 @@ const Navbar = ({ lang, setLang, }: { lang: string; setLang: React.Dispatch<Reac
       transition={{ duration: 1 }}
     >
       {/* Logo */}
-      <Link href="/" className={`${lang === "Ar" ? "flex-row-reverse" : "" } fx gap-2 text-xl font-medium text-gray-800`}>
+      <Link href="/" className={`${lang === "Ar" ? "flex-row-reverse" : "" } fx gap-2 text-xl font-medium text-black`}>
         <div className="hidden lg:block">
           {lang === "Ar" ? "مكتب " : lang === "Fr" ? "Cabinet " : "Cabinet "}
           <span className="font-bold text-yellow-500">
@@ -43,7 +43,7 @@ const Navbar = ({ lang, setLang, }: { lang: string; setLang: React.Dispatch<Reac
 
       {/* Desktop Navigation Links (Hidden on Medium and Smaller Devices) */}
       <motion.div
-        className={`hidden md:hidden lg:flex items-center gap-8 ${
+        className={`hidden lg:flex items-center gap-8 ${
           lang === "Ar" ? "lg:flex-row-reverse" : "lg:flex-row"
         }`}
         initial={{ opacity: 0 }}
@@ -55,7 +55,7 @@ const Navbar = ({ lang, setLang, }: { lang: string; setLang: React.Dispatch<Reac
           <Link
             href={link.href}
             key={link.key}
-            className="font-semibold text-gray-800 text-lg transition-all duration-300 hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500"
+            className="font-semibold text-black text-lg transition-all duration-300 hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500"
           >
             {lang === "Ang"
               ? link.label

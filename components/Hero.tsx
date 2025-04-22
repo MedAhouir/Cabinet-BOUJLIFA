@@ -13,18 +13,18 @@ const Hero = ({ lang }: { lang: string }) => {
         transition={{ duration: 1 }}
       >
         <div className={`w-full lg:w-[550px] ${lang === "Ar" && "text-right"} text-left mx-auto lg:mx-0`}>
-          <p className="text-sm text-gray-600 uppercase tracking-wide">
+          <p className="text-sm text-black uppercase tracking-wide">
             {lang === "Ang" && "- Excellence in Legal Expertise"}
             {lang === "Fr" && "- Excellence en expertise juridique"}
             {lang === "Ar" && "التميز في الخبرة القانونية -"}
           </p>
-          <h1 className={`${lang === "Ar" ? "" : "font-lora"} text-3xl sm:text-4xl lg:text-6xl font-bold capitalize leading-tight text-gray-800`}>
+          <h1 className={`${lang === "Ar" ? "" : "font-lora"} text-3xl sm:text-4xl lg:text-6xl font-bold capitalize leading-tight text-black`}>
             {lang === "Ang" && "Your trusted partner for legal solutions."}
             {lang === "Fr" && "Votre partenaire de confiance pour des solutions juridiques."}
             {lang === "Ar" && "شريكك الموثوق للحلول القانونية"}
           </h1>
         </div>
-        <p className={`w-full lg:w-[550px] text-gray-600 ${lang === "Ar" && "text-right"} text-left mx-auto lg:mx-0`}>
+        <p className={`w-full lg:w-[550px] text-black ${lang === "Ar" && "text-right"} text-left mx-auto lg:mx-0`}>
           {lang === "Ang" &&
             "Offering proactive risk management, personalized legal assistance, and expert counsel in diverse fields, from corporate law to civil responsibility."
           }

@@ -6,7 +6,7 @@
   --font-heading: var(--font-playfair);
   --font-body: var(--font-rubik);
   --primary-color: #FDE047;
-  --secondary-color: #1F2937;
+  --secondary-color: #000000;
 }
 
 * {

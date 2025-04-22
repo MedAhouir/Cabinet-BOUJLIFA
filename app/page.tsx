@@ -30,7 +30,7 @@ export default function Home() {
         <Navbar lang={lang} setLang={setLang} />
         <Hero lang={lang} />
         </Rapper>    
-      <div className="w-full bg-gray-800">
+      <div className="w-full bg-black">
         <Rapper>
           <Presentation lang={lang} />
         </Rapper>
@@ -39,7 +39,7 @@ export default function Home() {
         <Articles lang={lang} />
         <Office lang={lang} />
       </Rapper>
-      <div className="w-full bg-gray-800">
+      <div className="w-full bg-black">
         <Rapper>
           <Contact lang={lang} />
         </Rapper>

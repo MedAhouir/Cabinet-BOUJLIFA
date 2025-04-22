@@ -38,7 +38,7 @@ const Articles = ({ lang }: { lang: string }) => {
     >
       {/* Title with animation */}
       <motion.p
-        className="text-sm text-gray-600 uppercase tracking-wide"
+        className="text-sm text-black uppercase tracking-wide"
         initial={{ opacity: 0 }}
         animate={{ opacity: inView ? 1 : 0 }} // Trigger animation when in view
         transition={{ duration: 1 }}
@@ -54,7 +54,7 @@ const Articles = ({ lang }: { lang: string }) => {
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }} // Animate on scroll
           transition={{ duration: 1 }}
         >
-          <h1 className={`${lang === "Ar" ? "" : "font-lora"} text-4xl lg:text-6xl font-heading font-bold capitalize leading-tight text-gray-800`}>
+          <h1 className={`${lang === "Ar" ? "" : "font-lora"} text-4xl lg:text-6xl font-heading font-bold capitalize leading-tight text-black`}>
             {title}
           </h1>
         </motion.div>

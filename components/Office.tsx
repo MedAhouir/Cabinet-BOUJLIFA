@@ -11,7 +11,7 @@ const Office = ({ lang }: { lang: string }) => {
       <div
         className={`${
           lang === "Ar" && "text-right"
-        } w-full my-16 mx-0 flex flex-col gap-16 text-gray-800 text-lg px-4 sm:px-8 lg:px-12 py-8`}
+        } w-full my-16 mx-0 flex flex-col gap-16 text-black text-lg px-4 sm:px-8 lg:px-12 py-8`}
       >
         {/* Header Section */}
         <motion.div
@@ -21,7 +21,7 @@ const Office = ({ lang }: { lang: string }) => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm text-gray-600 uppercase tracking-wide">
+          <p className="text-sm text-black uppercase tracking-wide">
             {lang === "Ar"
               ? "مكتبنا -"
               : lang === "Fr"
@@ -69,7 +69,7 @@ const Office = ({ lang }: { lang: string }) => {
               />
             </div>
             <div className="text-center lg:text-left">
-              <h2 className="text-2xl text-center font-bold text-gray-800">
+              <h2 className="text-2xl text-center font-bold text-black">
                 {lang === "Ar"
                   ? "محمد بوجليفة"
                   : lang === "Fr"
@@ -98,16 +98,16 @@ const Office = ({ lang }: { lang: string }) => {
               <h2
                 className={`${
                   lang === "Ar" && "flex-row-reverse text-right"
-                } text-2xl font-bold text-gray-800 flex items-center gap-2`}
+                } text-2xl font-bold text-black flex items-center gap-2`}
               >
-                <FaMapMarkerAlt className="text-gray-800" />
+                <FaMapMarkerAlt className="text-black" />
                 {lang === "Ar"
                   ? "موقعنا"
                   : lang === "Fr"
                   ? "Notre localisation"
                   : "Our Location"}
               </h2>
-              <p className="text-gray-700 mt-2 leading-relaxed">
+              <p className="text-black mt-2 leading-relaxed">
                 {lang === "Ar"
                   ? "40، شارع بنزرت، الطابق الأول، لا جيروند الدار البيضاء، المغرب"
                   : lang === "Fr"
@@ -146,14 +146,14 @@ const Office = ({ lang }: { lang: string }) => {
         {STATES.map((state, i) => (
           <div
             key={i}
-            className="group flex flex-col items-center justify-center text-center p-4 hover:scale-110 border-2 border-gray-500 rounded-lg shadow-md hover:bg-gray-800 hover:shadow-lg transition-all duration-300"
+            className="group flex flex-col items-center justify-center text-center p-4 hover:scale-110 border-2 border-black rounded-lg shadow-md hover:bg-black hover:shadow-lg transition-all duration-300"
           >
             <h1 className="text-4xl font-bold text-yellow-500">
               <span className="flex">
                 <Number n={state.number} /> {i === 3 ? "%" : ""}
               </span>
             </h1>
-            <h2 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-white transition-all duration-300">
+            <h2 className="mt-2 text-lg font-medium text-black group-hover:text-white transition-all duration-300">
               {lang === "Ang" && state.title.En}
               {lang === "Fr" && state.title.Fr}
               {lang === "Ar" && state.title.Ar}

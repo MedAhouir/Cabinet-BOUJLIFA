@@ -5,7 +5,7 @@ const Presentation = ({ lang }: { lang: string }) => {
   return (
     <section
       id="about"
-      className={`w-full my-10 mx-0 flex flex-col gap-5 justify-between text-white text-lg px-4 sm:px-8 lg:px-12 py-8 bg-gray-800 ${lang === "Ar" && "text-right"}`}
+      className={`w-full my-10 mx-0 flex flex-col gap-5 justify-between text-white text-lg px-4 sm:px-8 lg:px-12 py-8 bg-black ${lang === "Ar" && "text-right"}`}
     >
       <motion.div
         className="flex-col w-full"

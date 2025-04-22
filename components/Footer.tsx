@@ -8,7 +8,7 @@ const Footer = ({ lang }: { lang: string }) => {
 
   return (
     <footer
-      className={`w-full text-gray-800 px-4 sm:px-8 lg:px-12 py-8 ${
+      className={`w-full text-black px-4 sm:px-8 lg:px-12 py-8 ${
         lang === "Ar" ? "text-right" : "text-left"
       }`}
     >
@@ -51,16 +51,16 @@ const Footer = ({ lang }: { lang: string }) => {
         {/* Contact Information */}
         <div className={`flex gap-2 ${lang === "Ar" ? "lg:items-end" : "lg:items-start"}`}>
           <Link href="https://www.facebook.com/p/Cabinet-Ma%C3%AEtre-Mhamed-Boujlifa-100091478464484/?_rdr">
-            <FaFacebook className="text-gray-800 text-4xl" />
+            <FaFacebook className="text-black text-4xl" />
           </Link>
           <Link href="https://ma.linkedin.com/company/cabinet-d-avocat-ma%C3%AEtre-boujlifa">
-            <FaLinkedin className="text-gray-800 text-4xl" />
+            <FaLinkedin className="text-black text-4xl" />
           </Link>
         </div>
       </div>
 
       {/* Divider */}
-      <div className="w-full h-px bg-gray-700 my-6"></div>
+      <div className="w-full h-px bg-black my-6"></div>
 
       {/* Bottom Section */}
       <div className={`${lang === "Ar" && "text-right lg:flex-row-reverse"} flex flex-col lg:flex-row justify-between items-center`}>

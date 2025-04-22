@@ -193,12 +193,12 @@ const Contact = ({ lang }: { lang: string }) => {
           </motion.div>
           <motion.button
             type="submit"
-            className="w-full py-4 rounded-lg text-lg font-semibold text-gray-800 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 shadow-lg hover:scale-105 hover:from-yellow-400 hover:to-red-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all duration-300 ease-in-out"
+            className="w-full py-4 rounded-lg text-lg font-semibold text-gray-800 bg-yellow-400 shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all duration-300 ease-in-out"
             disabled={isSending}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-                      transition={{ duration: 1.5 }}
+            transition={{ duration: 1.5 }}
           >
             {isSending ? (
               <div className="flex justify-center items-center">
